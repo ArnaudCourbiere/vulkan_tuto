@@ -1,8 +1,8 @@
-// Vulkan.cpp : Defines the entry point for the application.
+// main.cpp : Defines the entry point for the application.
 //
 
 #include "stdafx.h"
-#include "Vulkan.h"
+#include "resource.h"
 #include "Renderer.h"
 #include "Shared.h"
 #include <process.h>
@@ -256,7 +256,7 @@ BOOL CloseConsole() {
     //fclose(fStdErr);
     //fclose(fStdIn);
 
-    system("pause");
+    //system("pause");
     return FreeConsole();
 }
 

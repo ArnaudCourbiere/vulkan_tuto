@@ -66,6 +66,8 @@ const VkPhysicalDeviceProperties & Renderer::getPhysicalDeviceProperties() const
 void Renderer::setupLayersAndExtensions() {
     mInstanceExtensionList.push_back(VK_KHR_SURFACE_EXTENSION_NAME);
     mInstanceExtensionList.push_back(PLATFORM_SURFACE_EXTENSION_NAME);
+
+    mDeviceExtensionList.push_back(VK_KHR_SWAPCHAIN_EXTENSION_NAME);
 }
 
 void Renderer::initInstance() {

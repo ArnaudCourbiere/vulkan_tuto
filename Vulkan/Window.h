@@ -19,13 +19,18 @@ private:
     void initOSSurface();
     void initSurface();
     void deinitSurface();
+    void initSwapChain();
+    void deinitSwapChain();
 
     Renderer* mRenderer = nullptr;
 
     VkSurfaceKHR mSurface = VK_NULL_HANDLE;
+    VkSwapchainKHR mSwapchain = VK_NULL_HANDLE;
 
     uint32_t mSurfaceSizeX = 512;
     uint32_t mSurfaceSizeY = 512;
+    uint32_t mSwapchainImageCount = 2;
+
     VkSurfaceFormatKHR mSurfaceFormat = {};
     VkSurfaceCapabilitiesKHR mSurfaceCapabilities = {};
     bool mWindowShouldRun = true;
